@@ -1,10 +1,4 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/jeffrey126/jeffrey126.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### [a letter for shammy who i love]
+# [a letter for shammy who i love]
 
 
 My dear, I’m sorry to make you cry. I think there are many reasons for you to cry. It may be because of this virus disaster, it may be because of the problem of the house, it may be because of the problem of nana, and it may be because of the problem that I cannot go to Vietnam. . But these problems may be problems, maybe they are turning points, depending on how you deal with these problems.
