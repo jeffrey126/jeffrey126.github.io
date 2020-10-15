@@ -1,24 +1,38 @@
-# [a letter for shammy who i love]
+## Welcome to GitHub Pages
 
+You can use the [editor on GitHub](https://github.com/jeffrey126/jeffrey126.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
-My dear, I’m sorry to make you cry. I think there are many reasons for you to cry. It may be because of this virus disaster, it may be because of the problem of the house, it may be because of the problem of nana, and it may be because of the problem that I cannot go to Vietnam. . But these problems may be problems, maybe they are turning points, depending on how you deal with these problems.
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-But for our problem about love.
+### Markdown
 
-Without warning, you suddenly told me that you want to stop loving me, it was like being hit by something. Think about it, if one day I say to you unpreparedly, I stop loving you, how would you feel?
-Shammy, are you a person like this? Honey, are you the one I know, the one I love? How can such a thing be said so easily?
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-You said this suddenly, I don't know what your real thoughts are? I can only guess, did I do something wrong? Did you have a new boyfriend? what is this else? I thought about it a lot, but I think if a person loves another person, how can she say it so easily to stop loving.
+```markdown
+Syntax highlighted code block
 
-I think this is really wrong. If you are in a bad mood recently, I can understand it, but you can't deal with all problems in this way.
+# Header 1
+## Header 2
+### Header 3
 
-If we do not protect our love and manage it, it will wither and eventually die.
-Since you said stop our love, I don't know for what purpose you said this. If you really feel that because of the house problem, you have no feeling for me, tell me. I won't disturb you again.  When you choose me, you already know my situation.  I am not rich, but I work very hard. I have many contacts. I am constantly becoming rich and young. I also have many skills that others don’t have.  Am I right?  It's just that the virus destroys everything.  And I am also constantly working on new online businesses.
+- Bulleted
+- List
 
-According to the virus period, from me I slowly got to know you, our relationship is getting deeper and deeper, and I think I have already known you well. But what you have said in these past two days makes me more and more unable to understand you. 
+1. Numbered
+2. List
 
-"what you did ,then what is happen. The world works in this way."
+**Bold** and _Italic_ and `Code` text
 
-Every day we have a lot of thoughts, but 90% of the thoughts are negative, and only 10% of the thoughts are positive. You seriously think about your current thoughts, are they really your true thoughts? Then we talk about it, and finally make the final decision, so that we will not regret each other in the future. Let’s review everything we have. Then talk about it. 
+[Link](url) and ![Image](src)
+```
 
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jeffrey126/jeffrey126.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
