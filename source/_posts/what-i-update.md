@@ -5,4 +5,5 @@ tags:
 ---
 ### what i update?
 ## i wanna update some fresh news and share some useful things.
-let's go~
+let's go.
+show me the money.
