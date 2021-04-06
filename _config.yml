@@ -106,3 +106,19 @@ deploy:
   repository: git@github.com:jeffrey126/jeffrey126.github.io.git
   branch: gh-pages
 
+# hexo-renderer-markdown-it-plus config
+## Docs: https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus
+markdown_it_plus:
+    highlight: true
+    html: true
+    xhtmlOut: true
+    breaks: true
+    langPrefix:
+    linkify: true
+    typographer:
+    quotes: “”‘’
+    pre_class: highlight
+    plugins:
+        - plugin:
+            name: markdown-it-mark
+            enable: true
