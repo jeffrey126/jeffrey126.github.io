@@ -2,6 +2,10 @@
 title: my first blog
 date: 2021-04-06 23:37:33
 tags:
+- hexo
+- markdown
+categories:
+- hexo
 ---
 标题：
 #h1级标题
