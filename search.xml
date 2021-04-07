@@ -11,6 +11,7 @@
 #####h5级标题<br />
 ######h6级标题</p>
 <p>分割线：三个以上的短线 即可作出分割线</p>
+ <span id="more"></span>
 <hr />
 <p>超链接：[连接名称](网址 , 标题)<br />
 <a href="http://www.izhangbo.cn," title="我是标题">我是链接名</a><br />
@@ -20,6 +21,7 @@
 然后在别的地方定义 3 这个详细链接信息，<br />
 [3]: <a href="http://www.izhangbo.cn">http://www.izhangbo.cn</a> “聚牛团队”</p>
 <p>直接展示链接的写法：<a href="http://www.izhangbo.cn">http://www.izhangbo.cn</a></p>
+ <!-- more -->
 <p>键盘键<br />
 <kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd></p>
 <p>code格式：反引号<br />
@@ -28,11 +30,13 @@ Use the <code>printf()</code> function.</p>
 <p>强调：<br />
 <em>斜体强调</em><br />
 <strong>粗体强调</strong></p>
+ <!-- more -->
 <p>图片<br />
 <img src="http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png" alt="Alt text" title="Optional title" /></p>
 <p>使用 icon 图标文字<br />
 <i class="icon-cog"></i></p>
 <p>段落：以一个空行开始，以一个空行结束，中间的就是一个段落。</p>
+ <!-- more -->
 <p>表格：</p>
 <table>
 <thead>
