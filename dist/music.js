@@ -1,25 +1,20 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
-    autoplay: false,
+    autoplay: true,
     audio: [
       {
-        name: "PDD洪荒之力",
-        artist: '徐梦圆',
-        url: 'http://up.mcyt.net/?down/39868.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/84.jpg',
+        name: "Sweet Memory",
+        artist: 'MACO',
+        url: 'https://music.163.com/song/media/outer/url?id=515573221.mp3',
+        cover: 'https://p1.music.126.net/-U7mfaIjENUu8G_O0Dhv8g==/18419018788768520.jpg',
       },
       {
-        name: '9420',
-        artist: '麦小兜',
-        url: 'http://up.mcyt.net/?down/45967.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/8.jpg',
+        name: '願い~あの頃のキミへ~',
+        artist: '當山みれい',
+        url: 'https://music.163.com/song/media/outer/url?id=488388942.mp3',
+        cover: 'https://p1.music.126.net/kbLlBkGfEcA3RJyC5JhkDA==/18346451021830743.jpg',
       },
-      {
-        name: '风筝误',
-        artist: '刘珂矣',
-        url: 'http://up.mcyt.net/?down/46644.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/96.jpg',
-      }
     ]
 });
+
