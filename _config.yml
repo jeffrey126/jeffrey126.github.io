@@ -4,16 +4,17 @@
 
 # Site
 title: Crazy Iris's blog
-subtitle: 'toshare to learn'
-description: 'A beginner , A learner'
+subtitle: To share to learn
+description: A beginner , A learner
 keywords:
 author: Iris
-language: en
-timezone: 'Asia/Shanghai'
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://jeffrey126.github.io/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -142,3 +143,8 @@ search:
   field: post
   format: html
   limit: 10000
+
+
+aplayer:
+  meting: true                                  # Meting support, default: false
+
