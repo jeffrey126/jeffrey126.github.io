@@ -6,7 +6,7 @@
 title: Crazy Iris's blog
 subtitle: To share to learn
 description: A beginner , A learner
-keywords:
+keywords: 前端博客,JavaScript,html5,css3,Jquery,NodeJs,Ubuntu,hexo
 author: Iris
 language: zh-CN
 timezone: Asia/Shanghai
@@ -150,4 +150,7 @@ aplayer:
 
 # Extensions
 plugins: hexo-generator-sitemap
+
+sitemap:
+path: sitemap.xml
 
