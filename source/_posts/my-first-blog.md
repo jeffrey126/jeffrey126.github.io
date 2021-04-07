@@ -16,6 +16,7 @@ categories:
 ######h6级标题
 
 分割线：三个以上的短线 即可作出分割线
+ <!-- more -->
 
 ----
 
@@ -29,7 +30,7 @@ categories:
 [3]: http://www.izhangbo.cn "聚牛团队"
 
 直接展示链接的写法：<http://www.izhangbo.cn>
-
+ <!-- more -->
 键盘键
 <kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd>
 
@@ -41,7 +42,7 @@ Use the `printf()` function.
 强调：
 *斜体强调*
 **粗体强调**
-
+ <!-- more -->
 图片
 ![Alt text](http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png "Optional title")
 
@@ -49,7 +50,7 @@ Use the `printf()` function.
 <i class="icon-cog"></i>
 
 段落：以一个空行开始，以一个空行结束，中间的就是一个段落。
-
+ <!-- more -->
 表格：
 
 Item     | Value

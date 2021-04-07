@@ -148,3 +148,6 @@ search:
 aplayer:
   meting: true                                  # Meting support, default: false
 
+# Extensions
+plugins: hexo-generator-sitemap
+
