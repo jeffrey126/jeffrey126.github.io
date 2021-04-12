@@ -47,7 +47,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -106,6 +106,14 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+theme_config:
+
+  #scheme: Muse
+  #scheme: Mist
+  #scheme: Pisces
+  scheme: Gemini
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
@@ -132,11 +140,14 @@ markdown_it_plus:
 
 # word count
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+# 字数统计插件 npm i hexo-symbols-count-time
 symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: false
-  total_time: false
+  symbols: true # 文章字数统计
+  time: true # 文章时长统计
+  total_symbols: true # 全局字数统计
+  total_time: true # 全局时长统计
+  exclude_codeblock: false  # 排除代码字数统计
+
 
 search:
   path: search.xml
@@ -146,7 +157,7 @@ search:
 
 
 aplayer:
-  meting: true                                  # Meting support, default: false
+  meting: true                                # Meting support, default: false
 
 # Extensions
 plugins: hexo-generator-sitemap
@@ -167,7 +178,7 @@ live2d:
     superSample: 2
     width: 80
     height: 160
-    position: left // 模型在网页显示位置
+    position: right // 模型在网页显示位置
     hOffset: 20
     vOffset: 50
   mobile:
@@ -179,3 +190,9 @@ live2d:
 
 #aplayer:
 #  meting: true                                  # Meting support, default: false
+
+
+leancloud_visitors:
+  enable: true
+  appid: A8ARnWNOpqSq7M0C1AcfQjGo-gzGzoHsz
+  appkey: U5qcKsPykQupbUPAVwoKPPe0
