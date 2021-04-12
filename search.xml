@@ -3,7 +3,8 @@
   <entry>
     <title>My music</title>
     <url>/2021/04/08/My-music/</url>
-    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h3 id="gogogo"><a class="markdownIt-Anchor" href="#gogogo"></a> gogogo</h3>
+]]></content>
   </entry>
   <entry>
     <title>My first blog</title>
@@ -96,7 +97,7 @@ Use the <code>printf()</code> function.</p>
 <li>记得加空格哦。</li>
 </ul>
 </blockquote>
-]]></content>
+<div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
