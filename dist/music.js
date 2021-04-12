@@ -1,4 +1,5 @@
-const ap = new APlayer({
+#打开注释为开启
+#const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
     autoplay: true,
