@@ -1,3 +1,29 @@
+// 显示目录
+.category-list ul {
+  list-style: none;
+  li:before {
+    content: '>>';
+  }
+}
+
+// 添加标题底部横线
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: 2px solid #8c8c8c;
+  padding: 0 5% 2px 0;
+}
+
+// 底部字体
+.footer {
+  color: $fontColor;
+  font-size: 16px;
+  +mobile() {
+    font-size: 12px;
+  }
+  .busuanzi-value {
+    font-weight: bold;
+  }
+}
+
 // 背景
 body {
  	background:url(https://i.ibb.co/2PZJbYJ/a9cbs-b6zmx.webp);
@@ -13,7 +39,15 @@ body {
 // 放置头像等的边栏透明度
 .sidebar{
 	opacity: 0.7;
+
 }
+
+.sidebar {
+box-shadow: none
+background: none
+}
+
+
 // 标题等头部透明度
 .header-inner{
 	opacity: 0.7;
@@ -41,4 +75,14 @@ body {
 //		border-radius: 30px 50px 30px 50px;
 //		box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 //}
+
+
+//主页文章添加阴影效果
+.content-wrap {
+    background: initial;
+}
+.post-block {
+  box-shadow: 0 2px 6px 0 rgb(0,0,0,0.6), 0 0 6px 0 rgb(0,0,0,0.6)
+  background: #FFF
+}
 

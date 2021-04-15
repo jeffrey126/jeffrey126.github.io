@@ -2,7 +2,10 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-categories:
-description:
-keywords:
+categories: 
+comments: true
+description: 
+keywords: 
+abbrlink: 
+
 ---

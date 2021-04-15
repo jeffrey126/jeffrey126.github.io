@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "aplayer": "^1.10.1",
+    "cheerio": "*",
     "hexo": "^5.0.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
@@ -32,6 +33,11 @@
     "hexo-theme-next": "^8.3.0",
     "live2d-widget-model-z16": "^1.0.5",
     "protobufjs": "^6.10.2",
-    "valine": "^1.4.14"
+    "request": "^2.88.2",
+    "valine": "^1.4.14",
+    "xml-parser": "^1.2.1"
+  },
+  "devDependencies": {
+    "hexo-abbrlink": "^2.2.1"
   }
 }
