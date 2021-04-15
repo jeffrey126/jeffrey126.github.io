@@ -7,43 +7,72 @@
 ]]></content>
   </entry>
   <entry>
-    <title>My first blog</title>
-    <url>/2021/04/07/my-first-blog/</url>
-    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>标题：<br />
-#h1级标题<br />
-##h2级标题<br />
-###h3级标题<br />
-####h4级标题<br />
-#####h5级标题<br />
-######h6级标题</p>
+    <title>掌握如下几种Markdown语法，日常就够用了</title>
+    <url>/2021/04/07/markdown%20instruction/</url>
+    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h3 id="如何添加标题"><a class="markdownIt-Anchor" href="#如何添加标题"></a> 如何添加标题</h3>
+<pre><code>#标题：
+#h1级标题
+##h2级标题
+###h3级标题
+####h4级标题
+#####h5级标题
+######h6级标题
+</code></pre>
 <p>分割线：三个以上的短线 即可作出分割线</p>
- <span id="more"></span>
-<hr />
+<span id="more"></span>
+<h3 id="如何添加超链接"><a class="markdownIt-Anchor" href="#如何添加超链接"></a> 如何添加超链接</h3>
 <p>超链接：[连接名称](网址 , 标题)<br />
+<strong>示例代码：</strong><br />
+<em>(使用时去掉，中间“-”)</em></p>
+<blockquote>
+<p>[我是链接名]-(<a href="http://www.izhangbo.cn">http://www.izhangbo.cn</a>, “我是标题”)<br />
+[<i class="icon-refresh"></i> 点我刷新]-(/sonfilename/)</p>
+</blockquote>
+<p><strong>显示如下:</strong><br />
 <a href="http://www.izhangbo.cn," title="我是标题">我是链接名</a><br />
 <a href="/sonfilename/"><i class="icon-refresh"></i> 点我刷新</a></p>
 <p>另一种超链接写法：[链接名][链接代号]<br />
-[here][3]<br />
-然后在别的地方定义 3 这个详细链接信息，<br />
+[here][3]</p>
+<p>然后在别的地方定义 3 这个详细链接信息，<br />
 [3]: <a href="http://www.izhangbo.cn">http://www.izhangbo.cn</a> “聚牛团队”</p>
 <p>直接展示链接的写法：<a href="http://www.izhangbo.cn">http://www.izhangbo.cn</a></p>
- <!-- more -->
-<p>键盘键<br />
+<!--more-->
+<p>键盘键</p>
+<blockquote>
+<p><kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd><br />
 <kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd></p>
-<p>code格式：反引号<br />
-Use the <code>printf()</code> function.</p>
+</blockquote>
+<p><kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd><br />
+<kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd></p>
+<h3 id="code格式反引号"><a class="markdownIt-Anchor" href="#code格式反引号"></a> code格式：反引号</h3>
+<p>Use the <code>printf()</code> function.</p>
 <p><code>There is a literal backtick (`) here.针对在代码区段内插入反引号的情况</code></p>
-<p>强调：<br />
+<h3 id="如何强调"><a class="markdownIt-Anchor" href="#如何强调"></a> 如何强调</h3>
+<p><strong>示例代码：</strong><br />
 <em>斜体强调</em><br />
+<strong>粗体强调</strong><br />
+<strong>显示如下</strong></p>
+<p><em>斜体强调</em><br />
 <strong>粗体强调</strong></p>
- <!-- more -->
-<p>图片<br />
-<img src="http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png" alt="Alt text" title="Optional title" /></p>
-<p>使用 icon 图标文字<br />
+<!--more-->
+<h3 id="图片"><a class="markdownIt-Anchor" href="#图片"></a> 图片</h3>
+<pre><code>![Alt text](http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png &quot;Optional title&quot;)
+</code></pre>
+<h3 id="使用-icon-图标文字"><a class="markdownIt-Anchor" href="#使用-icon-图标文字"></a> 使用 icon 图标文字</h3>
+<p><strong>示例代码：</strong><br />
 <i class="icon-cog"></i></p>
-<p>段落：以一个空行开始，以一个空行结束，中间的就是一个段落。</p>
- <!-- more -->
-<p>表格：</p>
+<h3 id="段落"><a class="markdownIt-Anchor" href="#段落"></a> 段落：</h3>
+<pre><code>以一个空行开始，以一个空行结束，中间的就是一个段落。
+</code></pre>
+<!--more-->
+<h3 id="表格创建"><a class="markdownIt-Anchor" href="#表格创建"></a> 表格创建：</h3>
+<pre><code>Item     | Value
+-------- | ---
+Computer | $1600
+Phone    | $12
+Pipe     | $1
+</code></pre>
+<p><strong>显示如下:</strong></p>
 <table>
 <thead>
 <tr>
@@ -67,12 +96,24 @@ Use the <code>printf()</code> function.</p>
 </tbody>
 </table>
 <p>无序列表：使用 - 加一个空格（）</p>
+<pre><code>- 无需列表1
+- 无序列表2
+- 无序列表3
+</code></pre>
+<p><strong>显示如下:</strong></p>
 <ul>
 <li>无需列表1</li>
 <li>无序列表2</li>
 <li>无序列表3</li>
 </ul>
 <p>有序列表：使用 数字 加一个英文句点</p>
+<pre><code>1. 有序列表
+2. 有序列表
+3. 有序列表
+4. 有序列表
+5. 有序列表
+</code></pre>
+<p><strong>显示如下:</strong></p>
 <ol>
 <li>有序列表</li>
 <li>有序列表</li>
@@ -80,10 +121,9 @@ Use the <code>printf()</code> function.</p>
 <li>有序列表</li>
 <li>有序列表</li>
 </ol>
-<p>换行缩进形成代码区块</p>
-<pre><code>这里先换行，然后缩进4个空格，之后的内容便可以原样显示了，适合用于显示代码内容。直到文本结束或最后一个存在缩进的行为止。    
-</code></pre>
-<p>块引用</p>
+<h3 id="换行缩进形成代码区块"><a class="markdownIt-Anchor" href="#换行缩进形成代码区块"></a> 换行缩进形成代码区块</h3>
+<p>这里先换行，然后缩进4个空格，之后的内容便可以原样显示了，适合用于显示代码内容。直到文本结束或最后一个存在缩进的行为止。</p>
+<h3 id="块引用"><a class="markdownIt-Anchor" href="#块引用"></a> 块引用</h3>
 <blockquote>
 <p>给引用的文本开始位置都加一个 ‘&gt;’，<br />
 便可组成一个块引用。在块引用中，可以结合<br />
@@ -97,7 +137,16 @@ Use the <code>printf()</code> function.</p>
 <li>记得加空格哦。</li>
 </ul>
 </blockquote>
-<div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>]]></content>
+<p><strong>显示如下:</strong><br />
+&gt;给引用的文本开始位置都加一个 ‘&gt;’，<br />
+&gt;便可组成一个块引用。在块引用中，可以结合<br />
+&gt;其他markdown元素一块使用，比如列表。<br />
+&gt;<strong>强调</strong><br />
+也可以只在第一行加大于号，其他位置不加。</p>
+<pre><code>	&gt;- 块引用里使用列表，需要和上面的内容隔开一个空行
+	&gt;- 记得加空格哦。
+</code></pre>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
