@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>My music</title>
+    <title>如何创建自己的专属音乐库？</title>
     <url>/2021/04/08/My-music/</url>
-    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h3 id="my-music-list"><a class="markdownIt-Anchor" href="#my-music-list"></a> my music list</h3>
-<p><a href="https://u.pcloud.link/publink/show?code=0ZHCksXZATOKuHLuugFtLOGehyt6hHjbqxnV">https://u.pcloud.link/publink/show?code=0ZHCksXZATOKuHLuugFtLOGehyt6hHjbqxnV</a></p>
+    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="通过pcloud创建自己私有音乐库"><a class="markdownIt-Anchor" href="#通过pcloud创建自己私有音乐库"></a> 通过Pcloud创建自己私有音乐库</h2>
+<p>现在收费的音乐软件太多了，而且也比较杂，在网上找了很久，发现了一个好的东西,<a href="https://www.pcloud.com/zh/">Pcloud</a>.</p>
+<p>如果大家有收集音乐的习惯，不仿在<a href="https://www.pcloud.com/zh/">Pcloud</a>注册一个账号，然后开始上传和收集自己喜欢的音乐。</p>
+<span id="more"></span>
+<h2 id="pcloud-可以分享自己的私藏歌单无墙限制"><a class="markdownIt-Anchor" href="#pcloud-可以分享自己的私藏歌单无墙限制"></a> Pcloud 可以分享自己的私藏歌单，无墙限制</h2>
+<p>选择<a href="https://www.pcloud.com/zh/">Pcloud</a>还有一个重要原因就是，<strong>可以把云上的歌单分享给自己的好友，国内外都可以访问</strong>，是不是很方便。<br />
+我的私有音乐也放在了<a href="https://www.pcloud.com/zh/">Pcloud</a>，其中一个<strong>音乐歌单是 <a href="https://u.pcloud.link/publink/show?code=0ZHCksXZATOKuHLuugFtLOGehyt6hHjbqxnV">like9m</a>。</strong><br />
+<strong>大家可以一直更新自己的DIY音乐库，没事的时候就听听自己喜欢的音乐，放松放松。</strong></p>
+<h2 id="pcloud有10g的免费空间"><a class="markdownIt-Anchor" href="#pcloud有10g的免费空间"></a> Pcloud有10G的免费空间</h2>
+<p>Pcloud刚注册有<strong>4G的免费空间</strong>，然后通过解锁操作，可以获得其余的<strong>6G免费空间</strong>。</p>
+<h2 id="分享2个免费下载音乐的网站有这两个就够用了"><a class="markdownIt-Anchor" href="#分享2个免费下载音乐的网站有这两个就够用了"></a> 分享2个免费下载音乐的网站（有这两个就够用了）</h2>
+<ul>
+<li><a href="https://www.mp3juices.cc/">MP3Juices</a> - （这个网站主要是通过youtube视频音乐来转成mp3格式的。） （需科学上网）</li>
+<li><a href="https://freemp3cloud.com/">FreeMp3Cloud</a>  音乐免费下载-（国外英文音乐较多，音质高清	）（无需科学上网）</li>
+</ul>
+<h2 id="分享一个可免费剪辑音频的网站可在线编辑"><a class="markdownIt-Anchor" href="#分享一个可免费剪辑音频的网站可在线编辑"></a> 分享一个可免费剪辑音频的网站，可在线编辑</h2>
+<ul>
+<li><a href="https://mp3cut.net/cn/">Online MP3 Cutter</a> - Cut Songs, Make Ringtones，可以在线剪辑音乐，从视频当中提取音乐，并制作安卓和苹果m4r 格式的铃声</li>
+</ul>
+<p><strong>最后非常推荐大家使用Pcloud来制作自己专属的音乐库，并把好听的音乐分享给大家。</strong></p>
+<p><em>如果有收藏音乐爱好的朋友，也可以在下方留言，分享自己收集音乐的方法和分享一些自己的音乐库。</em></p>
 ]]></content>
+      <categories>
+        <category>pcloud</category>
+      </categories>
+      <tags>
+        <tag>music</tag>
+        <tag>musiclist</tag>
+        <tag>pcloud</tag>
+      </tags>
   </entry>
   <entry>
     <title>掌握如下几种Markdown语法，日常就够用了</title>
