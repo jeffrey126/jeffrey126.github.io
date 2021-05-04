@@ -157,9 +157,10 @@ $font-size-small          = .8em;
 <p>Use the <code>printf()</code> function.</p>
 <p><code>There is a literal backtick (`) here.针对在代码区段内插入反引号的情况</code></p>
 <h3 id="如何强调"><a class="markdownIt-Anchor" href="#如何强调"></a> 如何强调</h3>
-<p><strong>示例代码：</strong><br />
-<pre class="line-numbers language-none"><code class="language-none">*斜体强调*
-**粗体强调**<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
+<p><strong>示例代码：</strong></p>
+<pre><code><pre class="line-numbers language-none"><code class="language-none">*斜体强调*
+**粗体强调**<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</code></pre>
 <p><strong>显示如下:</strong></p>
 <p><em>斜体强调</em><br />
 <strong>粗体强调</strong></p>
@@ -168,8 +169,9 @@ $font-size-small          = .8em;
 <pre><code><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">Alt text</span>](<span class="token url">http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png</span> <span class="token string">"Optional title"</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </code></pre>
 <h3 id="使用-icon-图标文字"><a class="markdownIt-Anchor" href="#使用-icon-图标文字"></a> 使用 icon 图标文字</h3>
-<p><strong>示例代码：</strong><br />
-<pre class="line-numbers language-none"><code class="language-none">&lt;i class&#x3D;&quot;icon-cog&quot;&gt;&lt;&#x2F;i&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<p><strong>示例代码：</strong></p>
+<pre><code><pre class="line-numbers language-none"><code class="language-none">&lt;i class&#x3D;&quot;icon-cog&quot;&gt;&lt;&#x2F;i&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</code></pre>
 <h3 id="段落"><a class="markdownIt-Anchor" href="#段落"></a> 段落：</h3>
 <pre><code>以一个空行开始，以一个空行结束，中间的就是一个段落。
 </code></pre>
