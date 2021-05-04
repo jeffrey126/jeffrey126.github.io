@@ -559,6 +559,8 @@ if(canvas.getContext){
       <span class="post-meta-item-text">阅读次数：</span>
       <span class="leancloud-visitors-count"></span>
     </span>
+      </div>
+      <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
         <i class="far fa-file-word"></i>
@@ -598,18 +600,20 @@ if(canvas.getContext){
 <p>超链接：[连接名称](网址 , 标题)<br />
 <strong>示例代码：</strong><br />
 <em>(使用时去掉，中间“-”)</em><br />
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[我是链接名]-(http://www.izhangbo.cn, &quot;我是标题&quot;)</span><br><span class="line">[<span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;icon-refresh&quot;</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span> 点我刷新]-(/sonfilename/)</span><br></pre></td></tr></table></figure></p>
+<code>markdown 	[我是链接名]-(http://www.izhangbo.cn, &quot;我是标题&quot;) 	[&lt;i class=&quot;icon-refresh&quot;&gt;&lt;/i&gt; 点我刷新]-(/sonfilename/)</code></p>
 <p><strong>显示如下:</strong><br />
 <a target="_blank" rel="noopener" href="http://www.izhangbo.cn," title="我是标题">我是链接名</a><br />
 <a href="/sonfilename/"><i class="icon-refresh"></i> 点我刷新</a></p>
 <p>另一种超链接写法：[链接名][链接代号]</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[here][<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<pre class="highlight"><code class="">[here][3]
+</code></pre>
 <p>然后在别的地方定义 3 这个详细链接信息，</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">3</span>]: http:<span class="regexp">//</span>www.izhangbo.cn <span class="string">&quot;聚牛团队&quot;</span></span><br></pre></td></tr></table></figure>
+<pre class="highlight"><code class="">[3]: http://www.izhangbo.cn &quot;聚牛团队&quot;
+</code></pre>
 <p>直接展示链接的写法：<a target="_blank" rel="noopener" href="http://www.izhangbo.cn">http://www.izhangbo.cn</a></p>
 <!--more-->
 <p>键盘键<br />
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>Ctrl+[<span class="xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span> and <span class="xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>Ctrl+]<span class="xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>Ctrl+[<span class="xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span> and <span class="xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>Ctrl+]<span class="xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<code>markdown 	&lt;kbd&gt;Ctrl+[&lt;/kbd&gt; and &lt;kbd&gt;Ctrl+]&lt;/kbd&gt; 	&lt;kbd&gt;Ctrl+[&lt;/kbd&gt; and &lt;kbd&gt;Ctrl+]&lt;/kbd&gt;</code></p>
 <p><kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd><br />
 <kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd></p>
 <h3 id="code格式反引号"><a class="markdownIt-Anchor" href="#code格式反引号"></a> code格式：反引号</h3>
@@ -617,23 +621,31 @@ if(canvas.getContext){
 <p><code>There is a literal backtick (`) here.针对在代码区段内插入反引号的情况</code></p>
 <h3 id="如何强调"><a class="markdownIt-Anchor" href="#如何强调"></a> 如何强调</h3>
 <p><strong>示例代码：</strong><br />
-<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">*斜体强调*</span></span><br><span class="line"><span class="strong">**粗体强调**</span></span><br></pre></td></tr></table></figure></p>
+<code>*斜体强调* 	**粗体强调**</code></p>
 <p><strong>显示如下:</strong></p>
 <p><em>斜体强调</em><br />
 <strong>粗体强调</strong></p>
 <!--more-->
 <h3 id="图片"><a class="markdownIt-Anchor" href="#图片"></a> 图片</h3>
-<pre><code><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Alt text</span>](<span class="link">http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png &quot;Optional title&quot;</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>```markdown
+![Alt text](http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png &quot;Optional title&quot;)
+```
 </code></pre>
 <h3 id="使用-icon-图标文字"><a class="markdownIt-Anchor" href="#使用-icon-图标文字"></a> 使用 icon 图标文字</h3>
 <p><strong>示例代码：</strong><br />
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;icon-cog&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<code>&lt;i class=&quot;icon-cog&quot;&gt;&lt;/i&gt;</code></p>
 <h3 id="段落"><a class="markdownIt-Anchor" href="#段落"></a> 段落：</h3>
 <pre><code>以一个空行开始，以一个空行结束，中间的就是一个段落。
 </code></pre>
 <!--more-->
 <h3 id="表格创建"><a class="markdownIt-Anchor" href="#表格创建"></a> 表格创建：</h3>
-<pre><code><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Item     | Value</span><br><span class="line">-------- | ---</span><br><span class="line">Computer | $1600</span><br><span class="line">Phone    | $12</span><br><span class="line">Pipe     | $1</span><br></pre></td></tr></table></figure>
+<pre><code>```markdown
+Item     | Value
+-------- | ---
+Computer | $1600
+Phone    | $12
+Pipe     | $1
+```
 </code></pre>
 <p><strong>显示如下:</strong></p>
 <table>
@@ -659,7 +671,7 @@ if(canvas.getContext){
 </tbody>
 </table>
 <p>无序列表：使用 - 加一个空格（）<br />
-<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>无需列表1</span><br><span class="line"><span class="bullet">- </span>无序列表2</span><br><span class="line"><span class="bullet">- </span>无序列表3</span><br></pre></td></tr></table></figure><br />
+<code>- 无需列表1 	- 无序列表2 	- 无序列表3</code><br />
 <strong>显示如下:</strong></p>
 <ul>
 <li>无需列表1</li>
@@ -667,7 +679,7 @@ if(canvas.getContext){
 <li>无序列表3</li>
 </ul>
 <p>有序列表：使用 数字 加一个英文句点<br />
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表</span><br><span class="line"><span class="bullet">2.</span> 有序列表</span><br><span class="line"><span class="bullet">3.</span> 有序列表</span><br><span class="line"><span class="bullet">4.</span> 有序列表</span><br><span class="line"><span class="bullet">5.</span> 有序列表</span><br></pre></td></tr></table></figure></p>
+<code>1. 有序列表 	2. 有序列表 	3. 有序列表 	4. 有序列表 	5. 有序列表</code></p>
 <p><strong>显示如下:</strong></p>
 <ol>
 <li>有序列表</li>
@@ -679,7 +691,16 @@ if(canvas.getContext){
 <h3 id="换行缩进形成代码区块"><a class="markdownIt-Anchor" href="#换行缩进形成代码区块"></a> 换行缩进形成代码区块</h3>
 <p>这里先换行，然后缩进4个空格，之后的内容便可以原样显示了，适合用于显示代码内容。直到文本结束或最后一个存在缩进的行为止。</p>
 <h3 id="块引用"><a class="markdownIt-Anchor" href="#块引用"></a> 块引用</h3>
-<pre><code><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">给引用的文本开始位置都加一个 <span class="string">&#x27;&gt;&#x27;</span>，</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">便可组成一个块引用。在块引用中，可以结合</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">其他markdown元素一块使用，比如列表。</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">**强调**</span></span><br><span class="line">也可以只在第一行加大于号，其他位置不加。</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">- 块引用里使用列表，需要和上面的内容隔开一个空行</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">- 记得加空格哦。</span></span><br></pre></td></tr></table></figure>
+<pre><code>```
+&gt;给引用的文本开始位置都加一个 '&gt;'，
+&gt;便可组成一个块引用。在块引用中，可以结合
+&gt;其他markdown元素一块使用，比如列表。
+&gt;**强调**
+也可以只在第一行加大于号，其他位置不加。
+
+&gt;- 块引用里使用列表，需要和上面的内容隔开一个空行
+&gt;- 记得加空格哦。
+```
 </code></pre>
 <p><strong>显示如下:</strong></p>
 <blockquote>
@@ -767,12 +788,14 @@ if(canvas.getContext){
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
+      <span>站点总字数：</span>
     <span title="站点总字数">2k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
+      <span>站点阅读时长 &asymp;</span>
     <span title="站点阅读时长">2 分钟</span>
   </span>
 </div>
