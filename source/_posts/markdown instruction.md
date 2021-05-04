@@ -66,6 +66,7 @@ Use the `printf()` function.
 
 ### 如何强调
 **示例代码：**
+
 	```
 	*斜体强调*
 	**粗体强调**
@@ -78,12 +79,15 @@ Use the `printf()` function.
 <!--more-->
 
 ### 图片
+
 	```markdown
 	![Alt text](http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png "Optional title")
 	```
 
 ### 使用 icon 图标文字
+
 **示例代码：**
+
 	```
 	<i class="icon-cog"></i>
 	```
@@ -92,6 +96,7 @@ Use the `printf()` function.
 	以一个空行开始，以一个空行结束，中间的就是一个段落。
 <!--more-->
 ### 表格创建：
+
 	```markdown
 	Item     | Value
 	-------- | ---
@@ -139,6 +144,7 @@ Pipe     | $1
 这里先换行，然后缩进4个空格，之后的内容便可以原样显示了，适合用于显示代码内容。直到文本结束或最后一个存在缩进的行为止。    
 
 ### 块引用
+
 	```
 	>给引用的文本开始位置都加一个 '>'，
 	>便可组成一个块引用。在块引用中，可以结合

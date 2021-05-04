@@ -117,9 +117,11 @@ theme_config:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repository: git@github.com:jeffrey126/jeffrey126.github.io.git
-  branch: gh-pages
+  - type: git
+    repository: git@github.com:jeffrey126/jeffrey126.github.io.git
+    branch: gh-pages
+  - type: leancloud_counter_security_sync
+
 
 # hexo-renderer-markdown-it-plus config
 ## Docs: https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus
@@ -157,7 +159,7 @@ search:
 
 
 aplayer:
-  meting: true                                # Meting support, default: false
+  meting: false                                # Meting support, default: false
 
 # Extensions
 plugins: hexo-generator-sitemap
@@ -197,5 +199,10 @@ live2d:
 #  appid: A8ARnWNOpqSq7M0C1AcfQjGo-gzGzoHsz
 #  appkey: U5qcKsPykQupbUPAVwoKPPe0
 
-
-
+leancloud_counter_security:
+  enable_sync: true
+  app_id: A8ARnWNOpqSq7M0C1AcfQjGo-gzGzoHsz
+  app_key: U5qcKsPykQupbUPAVwoKPPe0
+  server_url: https://a8arnwno.lc-cn-n1-shared.com
+  username: iris
+  password: gfw778899
