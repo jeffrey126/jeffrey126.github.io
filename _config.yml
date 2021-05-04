@@ -45,14 +45,14 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: true
+  enable: false
+  line_number: false
+#  auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -157,7 +157,7 @@ search:
 
 
 aplayer:
-  meting: false                                # Meting support, default: false
+  meting: true                                # Meting support, default: false
 
 # Extensions
 plugins: hexo-generator-sitemap
