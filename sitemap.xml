@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jeffrey126.github.io/2021/04/07/markdown%20instruction/</loc>
+    <loc>https://jeffrey126.github.io/2021/05/05/hexo-Next-theme-modify-text-size/</loc>
     
-    <lastmod>2021-05-03</lastmod>
+    <lastmod>2021-05-04</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jeffrey126.github.io/2021/04/08/My-music/</loc>
+    <loc>https://jeffrey126.github.io/2021/04/29/My-music/</loc>
     
-    <lastmod>2021-05-03</lastmod>
+    <lastmod>2021-05-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jeffrey126.github.io/2021/04/07/markdown%20instruction/</loc>
+    
+    <lastmod>2021-05-04</lastmod>
     
   </url>
   
@@ -67,14 +74,28 @@
   </url>
   
   <url>
-    <loc>https://jeffrey126.github.io/tags/hexo/</loc>
+    <loc>https://jeffrey126.github.io/tags/%E9%9F%B3%E4%B9%90%E5%BA%93/</loc>
     <lastmod>2021-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://jeffrey126.github.io/tags/markdown/</loc>
+    <loc>https://jeffrey126.github.io/tags/%E5%AD%97%E4%BD%93%E4%BF%AE%E6%94%B9/</loc>
+    <lastmod>2021-05-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeffrey126.github.io/tags/Next%E4%B8%BB%E9%A2%98/</loc>
+    <lastmod>2021-05-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeffrey126.github.io/tags/markdown%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/</loc>
     <lastmod>2021-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -83,7 +104,14 @@
 
   
   <url>
-    <loc>https://jeffrey126.github.io/categories/pcloud/</loc>
+    <loc>https://jeffrey126.github.io/categories/%E4%BA%91%E5%82%A8%E5%AD%98/</loc>
+    <lastmod>2021-05-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeffrey126.github.io/categories/hexo/</loc>
     <lastmod>2021-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
