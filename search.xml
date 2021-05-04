@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于hexo-leancloud-counter-security配置问题</title>
+    <url>/2021/05/05/%E5%85%B3%E4%BA%8Ehexo-leancloud-counter-security%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="关于hexo-leancloud-counter-security配置问题"><a class="markdownIt-Anchor" href="#关于hexo-leancloud-counter-security配置问题"></a> 关于hexo-leancloud-counter-security配置问题</h2>
+<p>参考博主的博客配置leancloud：<br />
+<a href="https://www.jianshu.com/p/e0a719bac963">https://www.jianshu.com/p/e0a719bac963</a><br />
+在前面配置leancloud都很顺利，但是突然遇到BUG.<br />
+输入以下代码后：</p>
+<pre><code>hexo lc-counter register &lt;name&gt; &lt;pass&gt;
+</code></pre>
+<p>出现如下错误：</p>
+<pre><code>$ hexo lc-counter register &lt;name&gt; &lt;pass&gt;
+INFO  Validating config
+FATAL &#123;
+  err: TypeError: serverURL option is required for apps from CN region
+</code></pre>
+<h2 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法"></a> 解决方法</h2>
+<span id="more"></span>
+<p><strong>一定要确认 Hexo <code>_config.yml</code> 中 <code>leancloud_counter_security</code> 的 <code>app_id</code> 和 <code>app_key</code> 都是有效的。<br />
+另外一定要和下方这个格式一样输入内容。</strong></p>
+<pre><code>leancloud_counter_security:
+  enable_sync: true
+  app_id: &lt;leancloud中的appid&gt;（下图中1）
+  app_key: &lt;leancloud中的app_key&gt;（下图中2）
+  server_url: &lt;leancloud中的REST API 服务器地址&gt;（下图中3）
+  username: &lt;name&gt; （自定义）
+  password: &lt;pass&gt; （自定义）
+</code></pre>
+<p><strong>这里面的username和password要以下代码中的用户名和密码一致才能成功。再次输入。</strong></p>
+<pre><code>   hexo lc-counter register &lt;name&gt; &lt;pass&gt;
+   INFO  **** is successfully signed up
+</code></pre>
+<p><strong>提示成功。</strong><br />
+参考下图<br />
+<img src="https://i.ibb.co/60cK1Qt/4563.png" width="80%" height="80%" title="hexo-leancloud-counter-security" alt="hexo-leancloud-counter-security"/></p>
+<p>仅记录自己配置leancloud踩过的坑，这个点有很多博主没有写， 就是 <strong>【server_url: &lt;leancloud中的REST API 服务器地址&gt;】</strong> 项，一定要添加进去。<br />
+这个点让我翻了好久，最后在官方文档里得到解决。</p>
+<p><strong>参考以下链接解决：</strong><br />
+<a href="https://github.com/theme-next/hexo-leancloud-counter-security">https://github.com/theme-next/hexo-leancloud-counter-security</a><br />
+<strong>在下方链接停留了很久，不过也学到了不少东西。</strong><br />
+<a href="https://www.jianshu.com/p/e0a719bac963">https://www.jianshu.com/p/e0a719bac963</a></p>
+<p>希望本文帮助大家在配置leancloud的时候，少走点弯路。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>leancloud配置问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo(Next主题)修改文字大小</title>
     <url>/2021/05/05/hexo-Next-theme-modify-text-size/</url>
     <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>在hexo搭建完成后，使用next主题，发现有些字体过大，比如标题下面提示文章发表时间、分类、标签等字体。以下提出我的修改方式（版本hexo：5.4.0、next：8.3.0）。<br />
