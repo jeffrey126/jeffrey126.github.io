@@ -1,54 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>关于hexo-leancloud-counter-security配置问题</title>
-    <url>/2021/05/05/%E5%85%B3%E4%BA%8Ehexo-leancloud-counter-security%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="关于hexo-leancloud-counter-security配置问题"><a class="markdownIt-Anchor" href="#关于hexo-leancloud-counter-security配置问题"></a> 关于hexo-leancloud-counter-security配置问题</h2>
-<p>参考博主的博客配置leancloud：<br />
-<a href="https://www.jianshu.com/p/e0a719bac963">https://www.jianshu.com/p/e0a719bac963</a><br />
-在前面配置leancloud都很顺利，但是突然遇到BUG.<br />
-输入以下代码后：</p>
-<pre><code>hexo lc-counter register &lt;name&gt; &lt;pass&gt;
+    <title>hexo的next主题位置优化定制（缩小距离）</title>
+    <url>/2021/05/05/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%BD%8D%E7%BD%AE%E4%BC%98%E5%8C%96%E5%AE%9A%E5%88%B6/</url>
+    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>我也是刚开始使用next主题，还需要慢慢折腾，在折腾过程中，把遇到的问题记录下来，并附上解决过程，希望能帮助遇到同样问题的新手们。</p>
+<h2 id="调整首页博文之间的间距"><a class="markdownIt-Anchor" href="#调整首页博文之间的间距"></a> 调整首页博文之间的间距</h2>
+<h3 id="博文间距的距离"><a class="markdownIt-Anchor" href="#博文间距的距离"></a> 博文间距的距离</h3>
+<p>想让首页的博文之间的间距缩小一些，看着紧凑些，要如何进行处理呢？我们只需要修改themes\next\source\css_variables\base.styl文件内的post-eof-margin-top和post-eof-margin-bottom这两个值，影响的是博文之间分割线的上下间距，如果想紧凑就调小，如果想宽松就是放大。</p>
+<pre><code>//  .post-expand .post-eof
+//  In Muse scheme, margin above and below the post separator
+$post-eof-margin-top          = 80px; //  or 160px for more white space;
+$post-eof-margin-bottom       = 60px; //  or 120px for less white space;
 </code></pre>
-<p>出现如下错误：</p>
-<pre><code>$ hexo lc-counter register &lt;name&gt; &lt;pass&gt;
-INFO  Validating config
-FATAL &#123;
-  err: TypeError: serverURL option is required for apps from CN region
-</code></pre>
-<h2 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法"></a> 解决方法</h2>
 <span id="more"></span>
-<p><strong>一定要确认 Hexo <code>_config.yml</code> 中 <code>leancloud_counter_security</code> 的 <code>app_id</code> 和 <code>app_key</code> 都是有效的。<br />
-另外一定要和下方这个格式一样输入内容。</strong></p>
-<pre><code>leancloud_counter_security:
-  enable_sync: true
-  app_id: &lt;leancloud中的appid&gt;（下图中1）
-  app_key: &lt;leancloud中的app_key&gt;（下图中2）
-  server_url: &lt;leancloud中的REST API 服务器地址&gt;（下图中3）
-  username: &lt;name&gt; （自定义）
-  password: &lt;pass&gt; （自定义）
+<h3 id="博文描述与全文阅读之间的间距"><a class="markdownIt-Anchor" href="#博文描述与全文阅读之间的间距"></a> 博文描述与全文阅读之间的间距</h3>
+<p>看着博文描述与全文阅读按钮之间的间距太宽？这里也是可以修改的，需要修改的文件路径是themes\next\source\css_common\components\post\post-header.styl，查找并调整。</p>
+<pre><code>.posts-expand .post-header &#123;
+  font-size: $font-size-large;
+  margin-bottom: 10px;
+  text-align: center;
+&#125;
 </code></pre>
-<p><strong>这里面的username和password要以下代码中的用户名和密码一致才能成功。再次输入。</strong></p>
-<pre><code>   hexo lc-counter register &lt;name&gt; &lt;pass&gt;
-   INFO  **** is successfully signed up
+<h3 id="调整博文作者行和博文描述的间距"><a class="markdownIt-Anchor" href="#调整博文作者行和博文描述的间距"></a> 调整博文作者行和博文描述的间距</h3>
+<p>感觉博文作者行与博文描述间的具体太宽？或者你感觉还不够？怎么办呢？其实只需要修改themes\你的主题\source\css_common\components\post\post-header.styl文件内的</p>
+<pre><code>.posts-expand .post-meta-container &#123;
+  color: $grey-dark;
+  font-family: $font-family-posts;
+  font-size: $font-size-smallest;
+  margin-top: 3px;
+//这个值是是修改博文作者行与上面博文标题的间距的，你可以调整试一下
+  .post-description &#123;
+    font-size: $font-size-small;
+    margin-top: 2px;  
+//修改这里的这个的大值小就可以实现修改博文作者行与博文描述间的距离
+  &#125;
 </code></pre>
-<p><strong>提示成功。</strong><br />
-参考下图<br />
-<img src="https://i.ibb.co/60cK1Qt/4563.png" width="80%" height="80%" title="hexo-leancloud-counter-security" alt="hexo-leancloud-counter-security"/></p>
-<p>仅记录自己配置leancloud踩过的坑，这个点有很多博主没有写， 就是 <strong>【server_url: &lt;leancloud中的REST API 服务器地址&gt;】</strong> 项，一定要添加进去。<br />
-这个点让我翻了好久，最后在官方文档里得到解决。</p>
-<p><strong>参考以下链接解决：</strong><br />
-<a href="https://github.com/theme-next/hexo-leancloud-counter-security">https://github.com/theme-next/hexo-leancloud-counter-security</a><br />
-<strong>在下方链接停留了很久，不过也学到了不少东西。</strong><br />
-<a href="https://www.jianshu.com/p/e0a719bac963">https://www.jianshu.com/p/e0a719bac963</a><br />
-<strong>这个问题解决后，回到上面的这个链接，继续完成即可。</strong></p>
-<p>希望本文帮助大家在配置leancloud的时候，少走点弯路。</p>
+<h2 id="在侧边栏添加邮箱"><a class="markdownIt-Anchor" href="#在侧边栏添加邮箱"></a> 在侧边栏添加邮箱</h2>
+<p>在<strong>主题配置文件</strong>  source/_data/next.yml 中添加social配置：</p>
+<pre class="line-numbers language-none"><code class="language-none"># Social links
+social:
+  Email: mailto:gamesdoa@gmail.com
+
+social_icons:
+  enable: true
+  Email: envelope<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>文章内容宽度还在慢慢折腾，有其他问题随时补充。<br />
+改了好几个地方还是不能调整，找到方法后更新。</p>
 ]]></content>
       <categories>
-        <category>hexo</category>
+        <category>blog</category>
       </categories>
       <tags>
-        <tag>leancloud配置问题</tag>
+        <tag>Next主题</tag>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>位置优化</tag>
       </tags>
   </entry>
   <entry>
@@ -128,27 +134,30 @@ $font-size-small          = .8em;
 里面剩下的设置就自由发挥吧。</p>
 ]]></content>
       <categories>
-        <category>hexo</category>
+        <category>blog</category>
       </categories>
       <tags>
         <tag>字体修改</tag>
         <tag>Next主题</tag>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
     <title>如何创建自己的专属音乐库？</title>
     <url>/2021/04/29/My-music/</url>
-    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="通过pcloud创建自己私有音乐库"><a class="markdownIt-Anchor" href="#通过pcloud创建自己私有音乐库"></a> 通过Pcloud创建自己私有音乐库</h2>
+    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p><img src="https://i.ibb.co/bb2Qs9f/20210505151211.png" width="90%" height="80%" alt="pcloud music list" title="pcloud musiclist" border="0"></a></p>
+<span id="more"></span>
+<h2 id="通过pcloud创建自己私有音乐库"><a class="markdownIt-Anchor" href="#通过pcloud创建自己私有音乐库"></a> 通过Pcloud创建自己私有音乐库</h2>
 <p>现在收费的音乐软件太多了，而且也比较杂，在网上找了很久，发现了一个好的东西,<a href="https://www.pcloud.com/zh/">Pcloud</a>.</p>
 <p>如果大家有收集音乐的习惯，不仿在<a href="https://www.pcloud.com/zh/">Pcloud</a>注册一个账号，然后开始上传和收集自己喜欢的音乐。</p>
-<span id="more"></span>
-<h2 id="pcloud-可以分享自己的私藏歌单无墙限制"><a class="markdownIt-Anchor" href="#pcloud-可以分享自己的私藏歌单无墙限制"></a> Pcloud 可以分享自己的私藏歌单，无墙限制</h2>
+<h3 id="pcloud-可以分享自己的私藏歌单无墙限制"><a class="markdownIt-Anchor" href="#pcloud-可以分享自己的私藏歌单无墙限制"></a> Pcloud 可以分享自己的私藏歌单，无墙限制</h3>
 <p>选择<a href="https://www.pcloud.com/zh/">Pcloud</a>还有一个重要原因就是，<strong>可以把云上的歌单分享给自己的好友，国内外都可以访问</strong>，是不是很方便。<br />
 我的私有音乐也放在了<a href="https://www.pcloud.com/zh/">Pcloud</a>，其中一个<strong>音乐歌单是 <a href="https://u.pcloud.link/publink/show?code=0ZHCksXZATOKuHLuugFtLOGehyt6hHjbqxnV">like9m</a>。</strong><br />
 <strong>大家可以一直更新自己的DIY音乐库，没事的时候就听听自己喜欢的音乐，放松放松。</strong></p>
-<h2 id="pcloud有10g的免费空间"><a class="markdownIt-Anchor" href="#pcloud有10g的免费空间"></a> Pcloud有10G的免费空间</h2>
+<h3 id="pcloud有10g的免费空间"><a class="markdownIt-Anchor" href="#pcloud有10g的免费空间"></a> Pcloud有10G的免费空间</h3>
 <p>Pcloud刚注册有<strong>4G的免费空间</strong>，然后通过解锁操作，可以获得其余的<strong>6G免费空间</strong>。</p>
-<h2 id="分享2个免费下载音乐的网站有这两个就够用了"><a class="markdownIt-Anchor" href="#分享2个免费下载音乐的网站有这两个就够用了"></a> 分享2个免费下载音乐的网站（有这两个就够用了）</h2>
+<h3 id="分享2个免费下载音乐的网站有这两个就够用了"><a class="markdownIt-Anchor" href="#分享2个免费下载音乐的网站有这两个就够用了"></a> 分享2个免费下载音乐的网站（有这两个就够用了）</h3>
 <ul>
 <li><a href="https://www.mp3juices.cc/">MP3Juices</a> - （这个网站主要是通过youtube视频音乐来转成mp3格式的。） （需科学上网）</li>
 <li><a href="https://freemp3cloud.com/">FreeMp3Cloud</a>  音乐免费下载-（国外英文音乐较多，音质高清	）（无需科学上网）</li>
@@ -161,7 +170,7 @@ $font-size-small          = .8em;
 <p><em>如果有收藏音乐爱好的朋友，也可以在下方留言，分享自己收集音乐的方法和分享一些自己的音乐库。</em></p>
 ]]></content>
       <categories>
-        <category>云储存</category>
+        <category>cloud</category>
       </categories>
       <tags>
         <tag>music</tag>
@@ -309,9 +318,10 @@ $font-size-small          = .8em;
 </blockquote>
 ]]></content>
       <categories>
-        <category>markdown</category>
+        <category>blog</category>
       </categories>
       <tags>
+        <tag>markdown</tag>
         <tag>markdown简单用法</tag>
       </tags>
   </entry>

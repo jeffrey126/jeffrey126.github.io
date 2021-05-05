@@ -2118,7 +2118,7 @@ pre code {
   font-family: UKIJ Ekran;
 }
 .post-button {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
 }
 .use-motion .post-block,
@@ -2392,7 +2392,7 @@ pre code {
 }
 .posts-expand .post-header {
   font-size: 1em;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .posts-expand .post-title {
@@ -2515,7 +2515,7 @@ pre code {
   margin: 1em 0 0;
 }
 .post-tags {
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
 }
 .post-tags a {
