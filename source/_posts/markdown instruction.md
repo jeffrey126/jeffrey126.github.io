@@ -1,9 +1,10 @@
 ---
 title: 掌握如下几种Markdown语法，日常就够用了
 tags:
+  - markdown
   - markdown简单用法
 categories:
-  - markdown
+  - blog
 comments: true
 description: 简单介绍了下markdown的使用方法，如：标题设置、强调、插入列表等，新手可以参考和学习一下里面的内容，最重要还是要多加练习。
 keywords: 标题设置 强调 插入列表

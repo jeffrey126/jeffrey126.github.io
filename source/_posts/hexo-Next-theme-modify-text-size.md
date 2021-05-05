@@ -1,14 +1,16 @@
 ---
 title: hexo(Next主题)修改文字大小
 comments: true
+categories:
+  - blog
 tags:
   - 字体修改
   - Next主题
-categories:
   - hexo
+  - next
 abbrlink: 48438
 date: 2021-05-04 17:48:25
-description:
+description: 在hexo(Next主题)下，其默认的字体还是有点大的，那么如何如何修改文字大小呢？（版本hexo：5.4.0、next：8.3.0）
 keywords:
 top: 
 ---

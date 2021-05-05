@@ -117,10 +117,11 @@ theme_config:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  - type: git
-    repository: git@github.com:jeffrey126/jeffrey126.github.io.git
-    branch: gh-pages
-  - type: leancloud_counter_security_sync
+  type: git
+  repository: git@github.com:jeffrey126/jeffrey126.github.io.git
+  branch: gh-pages
+
+#  type: leancloud_counter_security_sync
 
 
 # hexo-renderer-markdown-it-plus config
@@ -201,8 +202,7 @@ live2d:
 
 leancloud_counter_security:
   enable_sync: true
-  app_id: A8ARnWNOpqSq7M0C1AcfQjGo-gzGzoHsz
-  app_key: U5qcKsPykQupbUPAVwoKPPe0
-  server_url: https://a8arnwno.lc-cn-n1-shared.com
+  app_id: WXzgEVustUAcoWikchztXl6D-MdYXbMMI
+  app_key: adPQ3rBXfA3Np15Lnts7JDoV
   username: iris
   password: gfw778899
