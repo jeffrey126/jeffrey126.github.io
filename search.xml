@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>如何用安卓手机科学上网？ V2RAY篇</title>
+    <url>/2021/05/30/vpn-android-v2ray/</url>
+    <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="安卓手机科学上网环境"><a class="markdownIt-Anchor" href="#安卓手机科学上网环境"></a> 安卓手机科学上网环境</h2>
+<p>1.用安卓手机下载v2ray 安卓版并安装<br />
+2.设置节点（购买或者网上寻找）<br />
+3.运行可用节点实现翻墙</p>
+<h3 id="1v2ray-安卓版下载和安装"><a class="markdownIt-Anchor" href="#1v2ray-安卓版下载和安装"></a> 1.v2ray 安卓版下载和安装</h3>
+<p>v2ray安卓版下载地址：<a href="https://wwa.lanzoui.com/iK69cp8usja">点击下载</a><br />
+下载后安装到手机并运行<br />
+<img src="https://www.bannedbook.org/bnews/wp-content/uploads/2020/01/icon512.png" width="50%" height="50%" title="hexo标题" alt="v2ray"/></p>
+<h3 id="2设置节点购买或者网上寻找"><a class="markdownIt-Anchor" href="#2设置节点购买或者网上寻找"></a> 2.设置节点（购买或者网上寻找）</h3>
+<p><strong>打开软件后，点击下方红色按键（右上角+号），然后点击订阅设置。</strong><br />
+<img src="https://upload.cc/i1/2021/05/30/i4hYC3.png" width="50%" height="50%" title="hexo标题" alt="v2ray配置"/></p>
+<p><strong>里面的备注随便填写一下，url的节点，可以通过购买或者和已科学上网的朋友共享节点。</strong></p>
+<p>输入好url节点并确定，并返回到初始界面。</p>
+<p><strong>点击下方红色按键（右上角+号），然后点击更新订阅。</strong><br />
+如果节点输入正确，并操作无误的话，下方就会显示很多节点。</p>
+<p>点击一个可用节点，然后点击右下方的V符号，即可实现科学上网。</p>
+<p>如果没有显示节点，可以重复以上操作，或者确认URL是否输入正确，之后再次尝试。</p>
+<p><strong>温馨提示：平时如果不用的情况之下可以关闭科学上网。以防止流量过度使用，还有国内网络污染等问题。</strong></p>
+]]></content>
+      <categories>
+        <category>科学上网</category>
+        <category>VPN</category>
+      </categories>
+      <tags>
+        <tag>V2RAY</tag>
+        <tag>安卓</tag>
+        <tag>andorid</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo的next主题位置优化定制（缩小距离）</title>
     <url>/2021/05/05/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%BD%8D%E7%BD%AE%E4%BC%98%E5%8C%96%E5%AE%9A%E5%88%B6/</url>
     <content><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>我也是刚开始使用next主题，还需要慢慢折腾，在折腾过程中，把遇到的问题记录下来，并附上解决过程，希望能帮助遇到同样问题的新手们。</p>
